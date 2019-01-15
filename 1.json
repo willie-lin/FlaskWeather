@@ -1,0 +1,9 @@
+{'HeWeather6':
+  [{'basic': {'cid': 'CN101010100', 'location': '北京', 'parent_city': '北京', 'admin_area': '北京', 'cnty': '中国', 'lat': '39.90498734', 'lon': '116.4052887', 'tz': '+8.00'},
+    'update': {'loc': '2019-01-15 20:56', 'utc': '2019-01-15 12:56'},
+    'status': 'ok',
+    'daily_forecast': [
+          {'cond_code_d': '100', 'cond_code_n': '100', 'cond_txt_d': '晴', 'cond_txt_n': '晴', 'date': '2019-01-15', 'hum': '13', 'mr': '12:28', 'ms': '00:54', 'pcpn': '0.0', 'pop': '0', 'pres': '1040', 'sr': '07:33', 'ss': '17:14', 'tmp_max': '-1', 'tmp_min': '-10', 'uv_index': '4', 'vis': '10', 'wind_deg': '248', 'wind_dir': '西南风', 'wind_sc': '1-2', 'wind_spd': '7'},
+          {'cond_code_d': '100', 'cond_code_n': '100', 'cond_txt_d': '晴', 'cond_txt_n': '晴', 'date': '2019-01-16', 'hum': '14', 'mr': '13:00', 'ms': '01:57', 'pcpn': '0.0', 'pop': '0', 'pres': '1033', 'sr': '07:33', 'ss': '17:15', 'tmp_max': '2', 'tmp_min': '-9', 'uv_index': '3', 'vis': '20', 'wind_deg': '-1', 'wind_dir': '无持续风向', 'wind_sc': '1-2', 'wind_spd': '7'},
+          {'cond_code_d': '100', 'cond_code_n': '502', 'cond_txt_d': '晴', 'cond_txt_n': '霾', 'date': '2019-01-17', 'hum': '10', 'mr': '13:38', 'ms': '03:02', 'pcpn': '0.0', 'pop': '0', 'pres': '1029', 'sr': '07:32', 'ss': '17:16', 'tmp_max': '5', 'tmp_min': '-9', 'uv_index': '6', 'vis': '20', 'wind_deg': '240', 'wind_dir': '西南风', 'wind_sc': '1-2', 'wind_spd': '10'}
+    ]}]}
