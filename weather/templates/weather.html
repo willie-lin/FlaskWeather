@@ -24,16 +24,26 @@
     <div class="container">
         <div class="columns">
             <div class="column is-offset-4 is-4">
+{#                {% import "bootstrap/wtf.html" as wtf %}#}
+{#                        {{ wtf.quick_form(form) }}#}
                 <form method="post">
+                     {{ form.hidden_tag() }}
                     <div class="field has-addons">
                         <div class="control is-expanded">
                             <input class="input" type="text" name="city" placeholder="City Name">
+{#                             {{ form.name.label }}<br>#}
+{#                                {{ form.name(size=32) }}<br>#}
+{#                                 {% for error in form.name.errors %}#}
+{#                                 <span style="color: red;">[{{ error }}]</span>#}
+{#                                {% endfor %}#}
                         </div>
                         <div class="control">
                             <button class="button is-info">
+{#                                {{ form.submit() }}#}
                                 Add City
                             </button>
                         </div>
+
                     </div>
 
                 </form>

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>What's the Weather like?</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.css" />
+
+</head>
+<body>
+
+<section class="hero is-primary">
+    <div class="hero-body">
+        <div class="container">
+            <h1 class="title">
+                What's the weather like?
+            </h1>
+
+        </div>
+    </div>
+</section>
+<section class="section">
+    <div class="container">
+        <div class="columns">
+            <div class="column is-offset-4 is-4">
+                <form method="post">
+                    <div class="field has-addons">
+                        <div class="control is-expanded">
+                            <input class="input" type="text" name="city" placeholder="City Name">
+                        </div>
+                        <div class="control">
+                            <button class="button is-info">
+                                Add City
+                            </button>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section">
+    <div class="container">
+    <div class="no">
+
+    </div>
+
+{#        <p>----------------------------------------------------------------------------</p>#}
+{#        <nav class="level">#}
+{#            <div class="field is-grouped is-grouped-multiline">#}
+{#  <div class="control">#}
+{#    <div class="tags has-addons">#}
+{#      <span class="tag is-dark">npm</span>#}
+{#      <span class="tag is-info">0.5.0</span>#}
+{#    </div>#}
+{#  </div>#}
+{##}
+{#  <div class="control">#}
+{#    <div class="tags has-addons">#}
+{#      <span class="tag is-dark">build</span>#}
+{#      <span class="tag is-success">passing</span>#}
+{#    </div>#}
+{#  </div>#}
+{##}
+{#  <div class="control">#}
+{#    <div class="tags has-addons">#}
+{#      <span class="tag is-dark">chat</span>#}
+{#      <span class="tag is-primary">on gitter</span>#}
+{#    </div>#}
+{#  </div>#}
+{#</div>#}
+{#        </nav>#}
+{#        <div class="columns">#}
+{#  <div class="column">#}
+{#    First column#}
+{#  </div>#}
+{#  <div class="column">#}
+{#    Second column#}
+{#  </div>#}
+{#  <div class="column">#}
+{#    Third column#}
+{#  </div>#}
+{#  <div class="column">#}
+{#    Fourth column#}
+{#  </div>#}
+{#</div>#}
+{##}
+{##}
+{##}
+{#        <nav class="level">#}
+{#  <div class="level-item has-text-centered">#}
+{#    <div>#}
+{#      <p class="heading">Tweets</p>#}
+{#      <p class="title">3,456</p>#}
+{#    </div>#}
+{#  </div>#}
+{#  <div class="level-item has-text-centered">#}
+{#    <div>#}
+{#      <p class="heading">Following</p>#}
+{#      <p class="title">123</p>#}
+{#    </div>#}
+{#  </div>#}
+{#  <div class="level-item has-text-centered">#}
+{#    <div>#}
+{#      <p class="heading">Followers</p>#}
+{#      <p class="title">456K</p>#}
+{#    </div>#}
+{#  </div>#}
+{#  <div class="level-item has-text-centered">#}
+{#    <div>#}
+{#      <p class="heading">Likes</p>#}
+{#      <p class="title">789</p>#}
+{#    </div>#}
+{#  </div>#}
+{#</nav>#}
+{#<nav class="level">#}
+{#  <p class="level-item has-text-centered">#}
+{#    <a class="link is-info">Home</a>#}
+{#  </p>#}
+{#  <p class="level-item has-text-centered">#}
+{#    <a class="link is-info">Menu</a>#}
+{#  </p>#}
+{#  <p class="level-item has-text-centered">#}
+{#    <img src="https://bulma.io/images/bulma-type.png" alt="" style="height: 30px;">#}
+{#  </p>#}
+{#  <p class="level-item has-text-centered">#}
+{#    <a class="link is-info">Reservations</a>#}
+{#  </p>#}
+{#  <p class="level-item has-text-centered">#}
+{#    <a class="link is-info">Contact</a>#}
+{#  </p>#}
+{#</nav>#}
+{##}
+{##}
+{#        <p>---------------------------------------------------------------------------------------------------------------</p>#}
+{#            <div class="columns">#}
+{#                <div class="column is-offset-4 is-4">#}
+                    {% for weather in weather_data %}
+                    <div class="box">
+                        <article class="media">
+                            <div class="media-left">
+                                <figure class="image is-50x50">
+                                    <img src="https://cdn.heweather.com/cond_icon/100.png" alt="Image" >
+                                </figure>
+                            </div>
+{#                            <div class="columns">#}
+                                    <div class="media-content">
+                                        <div class="content">
+                                            <p>
+                                                <span class="title">{{ weather.city }}</span>
+                                                <br><span class="subtitle">cid: {{ weather.cid }}</span>
+                                                <br><span class="subtitle">地区: {{ weather.area }}</span>
+                                                <br> <span class="subtitle">国家: {{ weather.country }}</span>
+                                                <br> <span class="subtitle">当地时间: {{ weather.local_time }}</span>
+                                                <br> <span class="subtitle">地理坐标: {{ weather.coordinate }}</span>
+                                            </p>
+                                        </div>
+                                    </div>
+
+                             <div class="media-content">
+                                <div class="content">
+                                    <p>
+                                        <span class="title">Air城市实况</span>
+{#                                        <br><span class="subtitle">人体感受温度:{{ weather.fl }}° C</span>#}
+                                        <br> <span class="subtitle">空气质量指数: {{ weather.aqi }}</span>
+                                        <br> <span class="subtitle">主要污染物: {{ weather.main }}</span>
+                                        <br> <span class="subtitle">空气质量: {{ weather.qlty }}</span>
+                                        <br> <span class="subtitle">pm10: {{ weather.pm10 }}</span>
+                                        <br> <span class="subtitle">pm25: {{ weather.pm25 }}</span>
+                                        <br> <span class="subtitle">二氧化氮: {{ weather.no2 }}</span>
+                                        <br> <span class="subtitle">二氧化硫: {{ weather.so2 }}</span>
+                                        <br> <span class="subtitle">一氧化碳: {{ weather.o3 }}</span>
+                                        <br> <span class="subtitle">臭氧: {{ weather.o3 }}</span>
+                                    </p>
+                                </div>
+                             </div>
+
+                            <div class="media-content">
+                                <div class="content">
+                                    <p>
+                                        <span class="title">天气预报</span>
+                                        <br><span class="subtitle">日出时间: {{ weather.sr }}</span>
+                                        <br><span class="subtitle">日落时间: {{ weather.ss }}</span>
+                                        <br><span class="subtitle">最高温度: {{ weather.tmp_max }}° C</span>
+                                        <br><span class="subtitle">最低温度: {{ weather.tmp_min }}° C</span>
+                                        <br><span class="subtitle">白天天气状况描述: {{ weather.cond_txt_d }}</span>
+                                        <br><span class="subtitle">晚间天气状况描述: {{ weather.cond_txt_n }}</span>
+                                        <br><span class="subtitle">风向: {{ weather.wind_dir }}</span>
+                                        <br><span class="subtitle">风力: {{ weather.wind_sc }}</span>
+                                        <br><span class="subtitle">风速: {{ weather.wind_spd }}</span>
+                                        <br><span class="subtitle">相对湿度: {{ weather.hum }}</span>
+                                        <br><span class="subtitle">降水量: {{ weather.pcpn }}</span>
+                                        <br><span class="subtitle">降水概率: {{ weather.pops }}%</span>
+                                        <br><span class="subtitle">大气压强: {{ weather.pres }}</span>
+                                        <br><span class="subtitle">紫外线强度指数: {{ weather.uv_index }}</span>
+                                        <br><span class="subtitle">能见度: {{ weather.vis }}</span>
+                                        <br> {{ weather.pubtime }}
+                                    </p>
+                                </div>
+                            </div>
+
+
+                            <div class="media-content">
+                                <div class="content">
+                                    <p>
+                                        <span class="title">实况天气</span>
+                                        <br><span class="subtitle">云量:{{ weather.now_cloud }} </span>
+{#                                        <br> <span class="subtitle">臭氧: {{ weather.now_cond_code }}</span>#}
+                                        <br> <span class="subtitle">实况天气状况描述: {{ weather.now_cond_txt }}</span>
+                                        <br> <span class="subtitle">温度: {{ weather.now_tmp }}° C</span>
+                                        <br> <span class="subtitle">体感温度: {{ weather.now_fl }}° C</span>
+                                        <br> <span class="subtitle">相对湿度: {{ weather.now_hum }}</span>
+                                        <br> <span class="subtitle">降水量: {{ weather.now_pcpn }}</span>
+                                        <br> <span class="subtitle">大气压强: {{ weather.now_pres }}</span>
+                                        <br> <span class="subtitle">能见度: {{ weather.now_vis }}</span>
+                                        <br> <span class="subtitle">风向360角度: {{ weather.now_wind_deg }}</span>
+                                        <br> <span class="subtitle">风向: {{ weather.now_wind_dir }}</span>
+                                        <br> <span class="subtitle">风力: {{ weather.now_wind_sc }}</span>
+                                        <br> <span class="subtitle">风速: {{ weather.now_wind_spd }}</span>
+                                        <br> {{ weather.pubtime }}
+                                    </p>
+                                </div>
+                            </div>
+{#                            </div>#}
+                        </article>
+                    </div>
+                    {% endfor %}
+                </div>
+{#            </div>#}
+{#        </div>#}
+    </section>
+    <footer class="footer">
+        <article class="media">
+            <div class="media-left">
+                <figure class="image is-128x128">
+                    <img src="https://www.heweather.com/assets/images/brand.png" alt="Image">
+                </figure>
+            </div>
+        </article>
+            <div class="content has-text-centered">
+                <p>
+                    <strong>HowWeather</strong> by <a href="https://www.heweather.com/">和风天气</a>
+                </p>
+            </div>
+    </footer>
+</body>
+</html>
