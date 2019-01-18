@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fb18753c-895a-423b-ad73-121a63413c69" name="Default Changelist" comment="" />
+    <list default="true" id="fb18753c-895a-423b-ad73-121a63413c69" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,8 +84,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/weather/routes.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="40">
-              <caret line="219" column="67" selection-start-line="219" selection-start-column="67" selection-end-line="219" selection-end-column="67" />
+            <state relative-caret-position="190">
+              <caret line="229" column="69" selection-start-line="229" selection-start-column="69" selection-end-line="229" selection-end-column="69" />
               <folding>
                 <element signature="e#165#224#0" expanded="true" />
               </folding>
@@ -272,7 +274,8 @@
       <workItem from="1547627688288" duration="15973000" />
       <workItem from="1547703791088" duration="6550000" />
       <workItem from="1547718590791" duration="11050000" />
-      <workItem from="1547792558595" duration="914000" />
+      <workItem from="1547792558595" duration="1125000" />
+      <workItem from="1547793817639" duration="452000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1547581799276</created>
@@ -295,16 +298,23 @@
       <option name="project" value="LOCAL" />
       <updated>1547793287342</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add air">
+      <created>1547793683119</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1547793683119</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="89277000" />
+    <option name="totallyTimeSpent" value="89940000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1299" height="743" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22905028" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2330407" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -317,9 +327,9 @@
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.4980048" weight="0.30456027" />
       <window_info anchor="bottom" id="Database Console" order="8" sideWeight="0.4964086" weight="0.32899022" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="10" sideWeight="0.49960095" visible="true" weight="0.32899022" />
+      <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.49880287" visible="true" weight="0.32899022" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
-      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.50039905" side_tool="true" visible="true" weight="0.32899022" />
+      <window_info active="true" anchor="bottom" id="Event Log" order="12" sideWeight="0.5011971" side_tool="true" visible="true" weight="0.32899022" />
       <window_info anchor="bottom" id="Python Console" order="13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -474,8 +484,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/weather/routes.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="219" column="67" selection-start-line="219" selection-start-column="67" selection-end-line="219" selection-end-column="67" />
+        <state relative-caret-position="190">
+          <caret line="229" column="69" selection-start-line="229" selection-start-column="69" selection-end-line="229" selection-end-column="69" />
           <folding>
             <element signature="e#165#224#0" expanded="true" />
           </folding>
